@@ -219,7 +219,21 @@ class weightView: UIViewController {
     
     @objc func getHeight(){
         weight = textField.text!
-        let vc = heightView()
-        navigationController?.pushViewController(vc, animated: true)
+        if (weight == "") {
+            let alert = UIAlertController(title: "Error", message: "Please enter weight", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+        }
+        else if (weightUnit == "") {
+            let alert = UIAlertController(title: "Error", message: "Please select weight unit", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+        }
+        else{
+            let vc = heightView()
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

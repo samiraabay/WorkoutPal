@@ -144,7 +144,7 @@ class goalView: UIViewController {
         
         buttonLoose.addTarget(self, action: #selector(btnL), for: .touchUpInside)
         buttonGain.addTarget(self, action: #selector(btnG), for: .touchUpInside)
-        //buttonCont.addTarget(self, action: #selector(getSummary), for: .touchUpInside)
+        buttonCont.addTarget(self, action: #selector(getSummary), for: .touchUpInside)
         
         
         //Constraints
@@ -222,10 +222,18 @@ class goalView: UIViewController {
         goal = "Gain muscle"
     }
     
-//    @objc func getSummary(){
-//        let vc = summaryView()
-//        navigationController?.pushViewController(vc, animated: true)
-//    }
+    @objc func getSummary(){
+        if (goal == "") {
+            let alert = UIAlertController(title: "Error", message: "Please select goal", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+        }
+        else{
+            let vc = summaryView()
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
 }
 

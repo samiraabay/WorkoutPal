@@ -162,10 +162,17 @@ class ageView: UIViewController {
     //button action
     
     @objc func getWeight(){
-        
         age = textField.text!
-        let vc = weightView()
-        navigationController?.pushViewController(vc, animated: true)
+        if (age == "") {
+            let alert = UIAlertController(title: "Error", message: "Please enter age", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+        }
+        else{
+            let vc = weightView()
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
 }

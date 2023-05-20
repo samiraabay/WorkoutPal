@@ -68,19 +68,19 @@ class heightView: UIViewController {
         return label
     }()
     
-    let heightField : UITextField = {
-        let heightField = UITextField()
-        heightField.translatesAutoresizingMaskIntoConstraints = false
-        heightField.borderStyle = .roundedRect
-        heightField.placeholder = "178"
-        heightField.textAlignment = .center
-        heightField.keyboardType = .numberPad
-        heightField.font = .systemFont(ofSize: 36, weight: .semibold)
-        heightField.backgroundColor = .white
-        heightField.layer.borderWidth = 1.0
-        heightField.layer.cornerRadius = 10
-        heightField.textColor = .black
-        return heightField
+    let textField : UITextField = {
+        let textField = UITextField()
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.borderStyle = .roundedRect
+        textField.placeholder = "178"
+        textField.textAlignment = .center
+        textField.keyboardType = .numberPad
+        textField.font = .systemFont(ofSize: 36, weight: .semibold)
+        textField.backgroundColor = .white
+        textField.layer.borderWidth = 1.0
+        textField.layer.cornerRadius = 10
+        textField.textColor = .black
+        return textField
     }()
     
     let buttonKg : UIButton = {
@@ -137,7 +137,7 @@ class heightView: UIViewController {
         view.addSubview(imageAge)
         view.addSubview(labelFour)
         view.addSubview(labelFive)
-        view.addSubview(heightField)
+        view.addSubview(textField)
         
         hStack.addArrangedSubview(buttonKg)
         hStack.addArrangedSubview(buttonLbs)
@@ -183,11 +183,11 @@ class heightView: UIViewController {
             labelFive.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -180),
             labelFive.heightAnchor.constraint(equalToConstant: 40),
             
-            heightField.topAnchor.constraint(equalTo: imageAge.bottomAnchor, constant: 25),
-            heightField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 180),
-            heightField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -100),
-            heightField.heightAnchor.constraint(equalToConstant: 75),
-            heightField.widthAnchor.constraint(equalToConstant: 100),
+            textField.topAnchor.constraint(equalTo: imageAge.bottomAnchor, constant: 25),
+            textField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 180),
+            textField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -100),
+            textField.heightAnchor.constraint(equalToConstant: 75),
+            textField.widthAnchor.constraint(equalToConstant: 100),
             
             hStack.topAnchor.constraint(equalTo: labelFive.bottomAnchor, constant: 20),
             hStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -219,8 +219,23 @@ class heightView: UIViewController {
     //button action
     
     @objc func getNext(){
-        let vc = levelView()
-        navigationController?.pushViewController(vc, animated: true)
+        height = textField.text!
+        if (height == "") {
+            let alert = UIAlertController(title: "Error", message: "Please enter height", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+        }
+        else if (heightUnit == "") {
+            let alert = UIAlertController(title: "Error", message: "Please select height unit", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+        }
+        else{
+            let vc = levelView()
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 
 }

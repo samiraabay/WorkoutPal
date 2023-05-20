@@ -123,11 +123,10 @@ class register: UIViewController {
             labelTwo.topAnchor.constraint(equalTo: labelOne.bottomAnchor),
             labelTwo.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             labelTwo.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
-            //labelTwo.heightAnchor.constraint(equalToConstant: 40),
             
             imageSI.topAnchor.constraint(equalTo: labelTwo.bottomAnchor),
-            imageSI.heightAnchor.constraint(equalToConstant: 381),
-            imageSI.widthAnchor.constraint(equalToConstant: 381),
+            imageSI.heightAnchor.constraint(equalToConstant: 300),
+            imageSI.widthAnchor.constraint(equalToConstant: 300),
             imageSI.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
             buttonGoogle.topAnchor.constraint(equalTo: imageSI.bottomAnchor, constant: 20),

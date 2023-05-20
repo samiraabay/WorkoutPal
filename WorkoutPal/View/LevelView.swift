@@ -261,8 +261,17 @@ class levelView: UIViewController {
     //button action
     
     @objc func getGoal(){
-        let vc = goalView()
-        navigationController?.pushViewController(vc, animated: true)
+        
+        if (level == "") {
+            let alert = UIAlertController(title: "Error", message: "Please select level", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+        }
+        else{
+            let vc = goalView()
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
 }

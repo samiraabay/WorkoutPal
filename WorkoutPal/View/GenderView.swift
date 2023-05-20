@@ -212,8 +212,17 @@ class genderView: UIViewController {
 //        }
     
     @objc func getAge(){
-        let vc = ageView()
-        navigationController?.pushViewController(vc, animated: true)
+        if (gender == "") {
+            let alert = UIAlertController(title: "Error", message: "Please select gender", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+        }
+        else{
+            let vc = ageView()
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
     }
 
 }
