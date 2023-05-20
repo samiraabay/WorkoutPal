@@ -7,17 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C019EEE2A16592900F3519D /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C019EED2A16592900F3519D /* SplashScreen.swift */; };
+		3C4746772A173C70005FE475 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4746762A173C70005FE475 /* SummaryView.swift */; };
+		3CC13EE62A165AB0007C8D22 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC13EE52A165AB0007C8D22 /* Register.swift */; };
+		3CC13EE82A165BD4007C8D22 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC13EE72A165BD3007C8D22 /* Login.swift */; };
+		3CC13EF02A165ECC007C8D22 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC13EEF2A165ECC007C8D22 /* GenderView.swift */; };
+		3CC13EF22A165EE3007C8D22 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC13EF12A165EE3007C8D22 /* AgeView.swift */; };
+		3CC13EF42A165EF0007C8D22 /* WeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC13EF32A165EF0007C8D22 /* WeightView.swift */; };
+		3CC13EF62A165EFF007C8D22 /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC13EF52A165EFF007C8D22 /* HeightView.swift */; };
+		3CC13EF82A16652F007C8D22 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC13EF72A16652F007C8D22 /* LevelView.swift */; };
+		3CC13EFA2A166585007C8D22 /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC13EF92A166585007C8D22 /* GoalView.swift */; };
 		3CFA46D12A129C160059612A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA46D02A129C160059612A /* AppDelegate.swift */; };
 		3CFA46D32A129C160059612A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA46D22A129C160059612A /* SceneDelegate.swift */; };
-		3CFA46D52A129C160059612A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA46D42A129C160059612A /* ViewController.swift */; };
 		3CFA46DA2A129C1B0059612A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CFA46D92A129C1B0059612A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C019EED2A16592900F3519D /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		3C4746762A173C70005FE475 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		3CC13EE52A165AB0007C8D22 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		3CC13EE72A165BD3007C8D22 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		3CC13EEF2A165ECC007C8D22 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		3CC13EF12A165EE3007C8D22 /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; };
+		3CC13EF32A165EF0007C8D22 /* WeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightView.swift; sourceTree = "<group>"; };
+		3CC13EF52A165EFF007C8D22 /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
+		3CC13EF72A16652F007C8D22 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
+		3CC13EF92A166585007C8D22 /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 		3CFA46CD2A129C160059612A /* WorkoutPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFA46D02A129C160059612A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CFA46D22A129C160059612A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3CFA46D42A129C160059612A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3CFA46D92A129C1B0059612A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CFA46DE2A129C1B0059612A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,6 +51,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C019EEC2A1657CD00F3519D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C019EED2A16592900F3519D /* SplashScreen.swift */,
+				3CC13EE52A165AB0007C8D22 /* Register.swift */,
+				3CC13EE72A165BD3007C8D22 /* Login.swift */,
+				3CC13EEF2A165ECC007C8D22 /* GenderView.swift */,
+				3CC13EF12A165EE3007C8D22 /* AgeView.swift */,
+				3CC13EF32A165EF0007C8D22 /* WeightView.swift */,
+				3CC13EF52A165EFF007C8D22 /* HeightView.swift */,
+				3CC13EF72A16652F007C8D22 /* LevelView.swift */,
+				3CC13EF92A166585007C8D22 /* GoalView.swift */,
+				3C4746762A173C70005FE475 /* SummaryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3CFA46C42A129C160059612A = {
 			isa = PBXGroup;
 			children = (
@@ -52,9 +87,9 @@
 		3CFA46CF2A129C160059612A /* WorkoutPal */ = {
 			isa = PBXGroup;
 			children = (
+				3C019EEC2A1657CD00F3519D /* View */,
 				3CFA46D02A129C160059612A /* AppDelegate.swift */,
 				3CFA46D22A129C160059612A /* SceneDelegate.swift */,
-				3CFA46D42A129C160059612A /* ViewController.swift */,
 				3CFA46D92A129C1B0059612A /* Assets.xcassets */,
 				3CFA46DE2A129C1B0059612A /* Info.plist */,
 			);
@@ -130,9 +165,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CFA46D52A129C160059612A /* ViewController.swift in Sources */,
+				3CC13EF02A165ECC007C8D22 /* GenderView.swift in Sources */,
+				3C019EEE2A16592900F3519D /* SplashScreen.swift in Sources */,
 				3CFA46D12A129C160059612A /* AppDelegate.swift in Sources */,
+				3CC13EFA2A166585007C8D22 /* GoalView.swift in Sources */,
+				3CC13EF82A16652F007C8D22 /* LevelView.swift in Sources */,
+				3C4746772A173C70005FE475 /* SummaryView.swift in Sources */,
+				3CC13EF42A165EF0007C8D22 /* WeightView.swift in Sources */,
+				3CC13EE82A165BD4007C8D22 /* Login.swift in Sources */,
+				3CC13EF62A165EFF007C8D22 /* HeightView.swift in Sources */,
 				3CFA46D32A129C160059612A /* SceneDelegate.swift in Sources */,
+				3CC13EE62A165AB0007C8D22 /* Register.swift in Sources */,
+				3CC13EF22A165EE3007C8D22 /* AgeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

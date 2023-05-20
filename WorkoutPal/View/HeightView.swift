@@ -1,0 +1,226 @@
+//
+//  HeightView.swift
+//  WorkoutPal
+//
+//  Created by Samira Abayasekara on 2023-05-15.
+//
+
+import Foundation
+import UIKit
+
+public var height : String = ""
+public var heightUnit : String     = ""
+
+class heightView: UIViewController {
+    
+    //UI Comps
+    
+    let labelOne : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 14, weight: .semibold)
+        label.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1.0)
+        label.text = "Step 4/6"
+        label.textAlignment = .center
+        return label
+    }()
+    
+    let labelTwo : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 36, weight: .thin)
+        label.text = "What's"
+        label.textAlignment = .center
+        return label
+    }()
+    
+    let labelThree : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 36, weight: .thin)
+        label.text = "your height?"
+        label.textAlignment = .center
+        return label
+    }()
+    
+    let imageAge: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "height"))
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
+    let labelFour : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 36, weight: .thin)
+        label.text = "I"
+        label.textAlignment = .center
+        return label
+    }()
+    
+    let labelFive : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 36, weight: .thin)
+        label.text = "Am"
+        label.textAlignment = .center
+        return label
+    }()
+    
+    let heightField : UITextField = {
+        let heightField = UITextField()
+        heightField.translatesAutoresizingMaskIntoConstraints = false
+        heightField.borderStyle = .roundedRect
+        heightField.placeholder = "178"
+        heightField.textAlignment = .center
+        heightField.keyboardType = .numberPad
+        heightField.font = .systemFont(ofSize: 36, weight: .semibold)
+        heightField.backgroundColor = .white
+        heightField.layer.borderWidth = 1.0
+        heightField.layer.cornerRadius = 10
+        heightField.textColor = .black
+        return heightField
+    }()
+    
+    let buttonKg : UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("cm", for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 28, weight: .bold)
+        button.backgroundColor = UIColor(red: 204/255, green: 190/255, blue: 248/255, alpha: 1.0)
+        button.titleLabel?.textColor = .white
+        button.layer.cornerRadius = 10
+        return button
+    }()
+    
+    let buttonLbs : UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("ft", for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 28, weight: .bold)
+        button.backgroundColor = UIColor(red: 204/255, green: 190/255, blue: 248/255, alpha: 1.0)
+        button.titleLabel?.textColor = .white
+        button.layer.cornerRadius = 10
+        return button
+    }()
+    
+    let hStack : UIStackView = {
+        let stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .horizontal
+        stack.spacing = 3
+        return stack
+    }()
+    
+    let buttonCont : UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Continue", for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 20, weight: .semibold)
+        button.backgroundColor = UIColor(red: 69/255, green: 90/255, blue: 100/255, alpha: 1.0)
+        button.layer.cornerRadius = 10
+        return button
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        setupUI()
+    }
+    
+    func setupUI(){
+        view.backgroundColor = .white
+        view.addSubview(labelOne)
+        view.addSubview(labelTwo)
+        view.addSubview(labelThree)
+        view.addSubview(imageAge)
+        view.addSubview(labelFour)
+        view.addSubview(labelFive)
+        view.addSubview(heightField)
+        
+        hStack.addArrangedSubview(buttonKg)
+        hStack.addArrangedSubview(buttonLbs)
+        
+        view.addSubview(hStack)
+        view.addSubview(buttonCont)
+        
+        //Button actions
+        
+        buttonKg.addTarget(self, action: #selector(btnKg), for: .touchUpInside)
+        buttonLbs.addTarget(self, action: #selector(btnLbs), for: .touchUpInside)
+        buttonCont.addTarget(self, action: #selector(getNext), for: .touchUpInside)
+        
+        //Constraints
+
+        NSLayoutConstraint.activate([
+            labelOne.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            labelOne.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            labelOne.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            
+            labelTwo.topAnchor.constraint(equalTo: labelOne.bottomAnchor, constant: 10),
+            labelTwo.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            labelTwo.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            labelTwo.heightAnchor.constraint(equalToConstant: 40),
+            
+            labelThree.topAnchor.constraint(equalTo: labelTwo.bottomAnchor),
+            labelThree.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            labelThree.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            labelThree.heightAnchor.constraint(equalToConstant: 40),
+            
+            imageAge.topAnchor.constraint(equalTo: labelThree.bottomAnchor, constant: 10),
+            imageAge.heightAnchor.constraint(equalToConstant: 200),
+            imageAge.widthAnchor.constraint(equalToConstant: 240),
+            imageAge.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            labelFour.topAnchor.constraint(equalTo: imageAge.bottomAnchor, constant: 20),
+            labelFour.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            labelFour.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -180),
+            labelFour.heightAnchor.constraint(equalToConstant: 36),
+            
+            labelFive.topAnchor.constraint(equalTo: labelFour.bottomAnchor, constant: 10),
+            labelFive.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            labelFive.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -180),
+            labelFive.heightAnchor.constraint(equalToConstant: 40),
+            
+            heightField.topAnchor.constraint(equalTo: imageAge.bottomAnchor, constant: 25),
+            heightField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 180),
+            heightField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -100),
+            heightField.heightAnchor.constraint(equalToConstant: 75),
+            heightField.widthAnchor.constraint(equalToConstant: 100),
+            
+            hStack.topAnchor.constraint(equalTo: labelFive.bottomAnchor, constant: 20),
+            hStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            buttonKg.heightAnchor.constraint(equalToConstant: 55),
+            buttonKg.widthAnchor.constraint(equalToConstant: 70),
+            buttonLbs.heightAnchor.constraint(equalToConstant: 55),
+            buttonLbs.widthAnchor.constraint(equalToConstant: 70),
+            
+            buttonCont.topAnchor.constraint(equalTo: buttonKg.bottomAnchor, constant: 20),
+            buttonCont.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            buttonCont.heightAnchor.constraint(equalToConstant: 50),
+            buttonCont.widthAnchor.constraint(equalToConstant: 225),
+        ])
+    }
+    
+    @objc func btnKg(){
+        buttonKg.backgroundColor = UIColor(red: 182/255, green: 162/255, blue: 245/255, alpha: 1.0)
+        buttonLbs.backgroundColor = UIColor(red: 204/255, green: 190/255, blue: 248/255, alpha: 1.0)
+        
+        heightUnit = "cm"
+    }
+    
+    @objc func btnLbs(){
+        buttonLbs.backgroundColor = UIColor(red: 182/255, green: 162/255, blue: 245/255, alpha: 1.0)
+        buttonKg.backgroundColor = UIColor(red: 204/255, green: 190/255, blue: 248/255, alpha: 1.0)
+        
+        heightUnit = "ft"
+    }
+    //button action
+    
+    @objc func getNext(){
+        let vc = levelView()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
+}
