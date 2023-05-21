@@ -22,9 +22,9 @@
 		3C44369A2A1A765A002C2C9A /* Mountain Climber.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C4436912A1A765A002C2C9A /* Mountain Climber.mp4 */; };
 		3C44369B2A1A765A002C2C9A /* Sit Ups.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C4436922A1A765A002C2C9A /* Sit Ups.mp4 */; };
 		3C44369C2A1A765A002C2C9A /* crouched_leg_stretch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C4436932A1A765A002C2C9A /* crouched_leg_stretch.mp4 */; };
-		3C44369D2A1A765A002C2C9A /* leg_pelvic_lift.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C4436942A1A765A002C2C9A /* leg_pelvic_lift.mp4 */; };
 		3C4436A12A1A7F01002C2C9A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4436A02A1A7F01002C2C9A /* TabBar.swift */; };
 		3C4436A32A1A8BD1002C2C9A /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4436A22A1A8BD0002C2C9A /* NavBar.swift */; };
+		3C4436A72A1A8E09002C2C9A /* Leg Lift.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C4436A62A1A8E09002C2C9A /* Leg Lift.mp4 */; };
 		3C4746772A173C70005FE475 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4746762A173C70005FE475 /* SummaryView.swift */; };
 		3CC13EE62A165AB0007C8D22 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC13EE52A165AB0007C8D22 /* Register.swift */; };
 		3CC13EE82A165BD4007C8D22 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC13EE72A165BD3007C8D22 /* Login.swift */; };
@@ -55,9 +55,9 @@
 		3C4436912A1A765A002C2C9A /* Mountain Climber.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mountain Climber.mp4"; path = "../../../Downloads/videos/Mountain Climber.mp4"; sourceTree = "<group>"; };
 		3C4436922A1A765A002C2C9A /* Sit Ups.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sit Ups.mp4"; path = "../../../Downloads/videos/Sit Ups.mp4"; sourceTree = "<group>"; };
 		3C4436932A1A765A002C2C9A /* crouched_leg_stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = crouched_leg_stretch.mp4; path = ../../../Downloads/videos/crouched_leg_stretch.mp4; sourceTree = "<group>"; };
-		3C4436942A1A765A002C2C9A /* leg_pelvic_lift.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = leg_pelvic_lift.mp4; path = ../../../Downloads/videos/leg_pelvic_lift.mp4; sourceTree = "<group>"; };
 		3C4436A02A1A7F01002C2C9A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		3C4436A22A1A8BD0002C2C9A /* NavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavBar.swift; path = ../../../../../.Trash/NavBar.swift; sourceTree = "<group>"; };
+		3C4436A62A1A8E09002C2C9A /* Leg Lift.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Leg Lift.mp4"; path = "../../../Downloads/videos/Leg Lift.mp4"; sourceTree = "<group>"; };
 		3C4746762A173C70005FE475 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		3CC13EE52A165AB0007C8D22 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		3CC13EE72A165BD3007C8D22 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -113,10 +113,10 @@
 		3CFA46C42A129C160059612A = {
 			isa = PBXGroup;
 			children = (
+				3C4436A62A1A8E09002C2C9A /* Leg Lift.mp4 */,
 				3C44368D2A1A7659002C2C9A /* Cobra Stretch.mp4 */,
 				3C4436902A1A765A002C2C9A /* Crouch Stretch.mp4 */,
 				3C4436932A1A765A002C2C9A /* crouched_leg_stretch.mp4 */,
-				3C4436942A1A765A002C2C9A /* leg_pelvic_lift.mp4 */,
 				3C4436912A1A765A002C2C9A /* Mountain Climber.mp4 */,
 				3C44368C2A1A7659002C2C9A /* Push Ups.mp4 */,
 				3C44368F2A1A7659002C2C9A /* Quad Stretch.mp4 */,
@@ -205,13 +205,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4436A72A1A8E09002C2C9A /* Leg Lift.mp4 in Resources */,
 				3C44369C2A1A765A002C2C9A /* crouched_leg_stretch.mp4 in Resources */,
 				3CFA46DA2A129C1B0059612A /* Assets.xcassets in Resources */,
 				3C4436952A1A765A002C2C9A /* Push Ups.mp4 in Resources */,
 				3C44369B2A1A765A002C2C9A /* Sit Ups.mp4 in Resources */,
 				3C44369A2A1A765A002C2C9A /* Mountain Climber.mp4 in Resources */,
 				3C4436982A1A765A002C2C9A /* Quad Stretch.mp4 in Resources */,
-				3C44369D2A1A765A002C2C9A /* leg_pelvic_lift.mp4 in Resources */,
 				3C4436962A1A765A002C2C9A /* Cobra Stretch.mp4 in Resources */,
 				3C4436992A1A765A002C2C9A /* Crouch Stretch.mp4 in Resources */,
 				3C4436972A1A765A002C2C9A /* squat_to_side_leg.mp4 in Resources */,

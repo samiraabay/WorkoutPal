@@ -11,7 +11,7 @@ import UIKit
 public var height : String = ""
 public var heightUnit : String     = ""
 
-class heightView: UIViewController {
+class HeightView: UIViewController {
     
     //UI Comps
     
@@ -233,7 +233,7 @@ class heightView: UIViewController {
             present(alert, animated: true, completion: nil)
         }
         else{
-            let vc = levelView()
+            let vc = LevelView()
             navigationController?.pushViewController(vc, animated: true)
         }
     }

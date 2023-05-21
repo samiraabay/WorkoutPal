@@ -10,7 +10,7 @@ import UIKit
 
 public var age : String = ""
 
-class ageView: UIViewController {
+class AgeView: UIViewController {
     
     //UI Comps
     
@@ -170,7 +170,7 @@ class ageView: UIViewController {
             present(alert, animated: true, completion: nil)
         }
         else{
-            let vc = weightView()
+            let vc = WeightView()
             navigationController?.pushViewController(vc, animated: true)
         }
     }

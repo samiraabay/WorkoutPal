@@ -10,7 +10,7 @@ import UIKit
 
 public var uname : String = ""
 
-class nameView: UIViewController {
+class NameView: UIViewController {
     
     //UI Comps
     
@@ -170,7 +170,7 @@ class nameView: UIViewController {
             present(alert, animated: true, completion: nil)
         }
         else{
-            let vc = genderView()
+            let vc = GenderView()
             navigationController?.pushViewController(vc, animated: true)
         }
     }

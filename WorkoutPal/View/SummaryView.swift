@@ -10,7 +10,7 @@ import UIKit
 
 public var bmi : String = "";
 
-class summaryView : UIViewController {
+class SummaryView : UIViewController {
     
     let questionLabel : UILabel = {
         let label = UILabel()

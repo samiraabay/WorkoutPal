@@ -11,7 +11,7 @@ import UIKit
 public var weight : String = ""
 public var weightUnit : String = ""
 
-class weightView: UIViewController {
+class WeightView: UIViewController {
     
     let labelOne : UILabel = {
         let label = UILabel()
@@ -232,7 +232,7 @@ class weightView: UIViewController {
             present(alert, animated: true, completion: nil)
         }
         else{
-            let vc = heightView()
+            let vc = HeightView()
             navigationController?.pushViewController(vc, animated: true)
         }
     }

@@ -10,7 +10,10 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class exerciseView: UIViewController {
+public var exerciseTitles: [String] = []
+
+class ExerciseView: UIViewController {
+    
     let videoPlayer = AVPlayer()
     let playerViewController = AVPlayerViewController()
     
@@ -44,6 +47,9 @@ class exerciseView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        
+        // Add the exercise title to the array
+        exerciseTitles.append(selectedExerciseName)
         
         // Set up the video player
         guard let videoURL = Bundle.main.url(forResource: selectedExerciseName, withExtension: "mp4") else {

@@ -116,12 +116,12 @@ class SplashScreen: UIViewController {
     //button actions
     
     @objc func getStarted(){
-        let vc = register()
+        let vc = Register()
         navigationController?.pushViewController(vc, animated: true)
     }
 
     @objc func getSignIn(){
-        let vc = login()
+        let vc = Login()
         navigationController?.pushViewController(vc, animated: true)
     }
     

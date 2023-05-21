@@ -10,7 +10,7 @@ import UIKit
 
 public var gender : String = ""
 
-class genderView: UIViewController {
+class GenderView: UIViewController {
     
     //UI Comps
     
@@ -219,7 +219,7 @@ class genderView: UIViewController {
             present(alert, animated: true, completion: nil)
         }
         else{
-            let vc = ageView()
+            let vc = AgeView()
             navigationController?.pushViewController(vc, animated: true)
         }
         

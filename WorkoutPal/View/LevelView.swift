@@ -10,7 +10,7 @@ import UIKit
 
 public var level : String = ""
 
-class levelView: UIViewController {
+class LevelView: UIViewController {
     
     //UI Comps
     
@@ -269,7 +269,7 @@ class levelView: UIViewController {
             present(alert, animated: true, completion: nil)
         }
         else{
-            let vc = goalView()
+            let vc = GoalView()
             navigationController?.pushViewController(vc, animated: true)
         }
     }

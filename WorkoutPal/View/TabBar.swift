@@ -39,7 +39,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Home"
-        let vc = homeView()
+        let vc = HomeView()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -48,7 +48,7 @@ class HistoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "My Plan"
-        let vc = historyView()
+        let vc = HistoryView()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -57,7 +57,7 @@ class ScheduleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Schedule"
-        let vc = schedulePicker()
+        let vc = SchedulePicker()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -66,7 +66,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Settings"
-        let vc = aboutUser()
+        let vc = AboutUserView()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

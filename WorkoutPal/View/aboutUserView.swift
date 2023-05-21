@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class aboutUserView: UIViewController {
+class AboutUserView: UIViewController {
     
     // UI elements
     let nameLabel: UILabel = {

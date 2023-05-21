@@ -10,7 +10,7 @@ import UIKit
 
 public var goal : String = ""
 
-class goalView: UIViewController {
+class GoalView: UIViewController {
     
     //UI Comps
     
@@ -230,7 +230,7 @@ class goalView: UIViewController {
             present(alert, animated: true, completion: nil)
         }
         else{
-            let vc = summaryView()
+            let vc = SummaryView()
             navigationController?.pushViewController(vc, animated: true)
         }
     }

@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-class historyView: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HistoryView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let tableView: UITableView = {
         let tableView = UITableView()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return tableView
     }()
     
-    let exercises = ["Push-ups", "Squats", "Plank", "Lunges", "Sit-ups"]
+    let exercises = exerciseTitles
     
     override func viewDidLoad() {
         super.viewDidLoad()

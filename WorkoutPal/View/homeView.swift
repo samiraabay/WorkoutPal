@@ -11,7 +11,7 @@ import UIKit
 public var selectedExerciseName : String = ""
 public var selectedExerciseDescription : String = ""
 
-class homeView: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class HomeView: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let titleLabel : UILabel = {
         let label = UILabel()
@@ -31,8 +31,8 @@ class homeView: UIViewController, UITableViewDataSource, UITableViewDelegate {
     let exercises: [(icon: String, title: String, description: String)] = [
         ("cobra_icon", "Cobra Stretch", "An exercise that engaages muscles from the chest and back to the hamstrings"),
         ("pushup_icon", "Push Ups", "An exercise that engages muscles in the arms and chest"),
-        ("exercise_icon3", "Exercise 3", "Description 3"),
-        ("exercise_icon4", "Exercise 4", "Description 4"),
+        ("situp_icon", "Sit Ups", "An exercise that engages muscles in the arms, shoulders and chest"),
+        ("leglift_icon", "Leg Lift", "An exercise that engages muscles in hips and thighs"),
         ("exercise_icon5", "Exercise 5", "Description 5")
     ]
     
@@ -92,7 +92,7 @@ class homeView: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let exercise = exercises[indexPath.row]
         selectedExerciseName = exercise.title
         selectedExerciseDescription = exercise.description
-        let vc = exerciseView()
+        let vc = ExerciseView()
         navigationController?.pushViewController(vc, animated: true)
     }
 

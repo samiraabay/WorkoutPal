@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class register: UIViewController {
+class Register: UIViewController {
 
     //UI Comps
 
@@ -149,12 +149,12 @@ class register: UIViewController {
     //button action
     
     @objc func getName(){
-        let vc = nameView()
+        let vc = NameView()
         navigationController?.pushViewController(vc, animated: true)
     }
 
     @objc func getLogin(){
-        let vc = login()
+        let vc = Login()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
