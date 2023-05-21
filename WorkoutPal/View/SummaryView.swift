@@ -8,13 +8,33 @@
 import Foundation
 import UIKit
 
+public var bmi : String = "";
+
 class summaryView : UIViewController {
+    
+    let questionLabel : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 26, weight: .bold)
+        label.text = "Is This Correct?"
+        label.textAlignment = .center
+        return label
+    }()
+    
+    let nameLabel : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 24, weight: .thin)
+        label.text = "My Name is \(uname)"
+        label.textAlignment = .center
+        return label
+    }()
     
     let genderLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 36, weight: .thin)
-        label.text = gender
+        label.font = .systemFont(ofSize: 24, weight: .thin)
+        label.text = "I am a \(gender)"
         label.textAlignment = .center
         return label
     }()
@@ -22,8 +42,8 @@ class summaryView : UIViewController {
     let ageLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 36, weight: .thin)
-        label.text = age
+        label.font = .systemFont(ofSize: 24, weight: .thin)
+        label.text = "I am \(age) years old"
         label.textAlignment = .center
         return label
     }()
@@ -31,8 +51,8 @@ class summaryView : UIViewController {
     let weightLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 36, weight: .thin)
-        label.text = weight
+        label.font = .systemFont(ofSize: 24, weight: .thin)
+        label.text = "My weight is \(weight)"
         label.textAlignment = .center
         return label
     }()
@@ -40,8 +60,8 @@ class summaryView : UIViewController {
     let weightUnitLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 36, weight: .thin)
-        label.text = weightUnit
+        label.font = .systemFont(ofSize: 24, weight: .thin)
+        label.text = "\(weightUnit)"
         label.textAlignment = .center
         return label
     }()
@@ -49,8 +69,8 @@ class summaryView : UIViewController {
     var heightLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 36, weight: .thin)
-        label.text = height
+        label.font = .systemFont(ofSize: 24, weight: .thin)
+        label.text = "I Am \(height)"
         label.textAlignment = .center
         return label
     }()
@@ -58,8 +78,8 @@ class summaryView : UIViewController {
     var heightUnitLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 36, weight: .thin)
-        label.text = heightUnit
+        label.font = .systemFont(ofSize: 24, weight: .thin)
+        label.text = "\(heightUnit) tall"
         label.textAlignment = .center
         return label
     }()
@@ -67,8 +87,8 @@ class summaryView : UIViewController {
     var levelLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 36, weight: .thin)
-        label.text = level
+        label.font = .systemFont(ofSize: 24, weight: .thin)
+        label.text = "I am a \(level)"
         label.textAlignment = .center
         return label
     }()
@@ -76,8 +96,17 @@ class summaryView : UIViewController {
     var goalLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 36, weight: .thin)
-        label.text = goal
+        label.font = .systemFont(ofSize: 24, weight: .thin)
+        label.text = "My goal is to \(goal)"
+        label.textAlignment = .center
+        return label
+    }()
+    
+    var bmiLabel : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 24, weight: .thin)
+        label.text = "My BMI value is \(bmi)"
         label.textAlignment = .center
         return label
     }()
@@ -111,6 +140,7 @@ class summaryView : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nameLabel.text = uname
         genderLabel.text = gender
         ageLabel.text = age
         weightLabel.text = weight
@@ -125,12 +155,15 @@ class summaryView : UIViewController {
     
     func setupUI(){
         view.backgroundColor = .white
+        view.addSubview(questionLabel)
+        view.addSubview(nameLabel)
         view.addSubview(genderLabel)
         view.addSubview(ageLabel)
         view.addSubview(hStack1)
         view.addSubview(hStack2)
         view.addSubview(levelLabel)
         view.addSubview(goalLabel)
+        view.addSubview(bmiLabel)
         view.addSubview(buttonCont)
         
         hStack1.addArrangedSubview(weightLabel)
@@ -142,9 +175,19 @@ class summaryView : UIViewController {
         buttonCont.addTarget(self, action: #selector(goHome), for: .touchUpInside)
         
         
-        
         NSLayoutConstraint.activate([
-            genderLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            
+            questionLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            questionLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            questionLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            questionLabel.heightAnchor.constraint(equalToConstant: 60),
+            
+            nameLabel.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 10),
+            nameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            nameLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            nameLabel.heightAnchor.constraint(equalToConstant: 40),
+            
+            genderLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 10),
             genderLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             genderLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             genderLabel.heightAnchor.constraint(equalToConstant: 40),
@@ -170,7 +213,12 @@ class summaryView : UIViewController {
             goalLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             goalLabel.heightAnchor.constraint(equalToConstant: 40),
             
-            buttonCont.topAnchor.constraint(equalTo: goalLabel.bottomAnchor, constant: 10),
+            bmiLabel.topAnchor.constraint(equalTo: goalLabel.bottomAnchor, constant: 10),
+            bmiLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            bmiLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            bmiLabel.heightAnchor.constraint(equalToConstant: 40),
+            
+            buttonCont.topAnchor.constraint(equalTo: goalLabel.bottomAnchor, constant: 60),
             buttonCont.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             buttonCont.heightAnchor.constraint(equalToConstant: 50),
             buttonCont.widthAnchor.constraint(equalToConstant: 225),

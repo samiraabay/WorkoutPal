@@ -19,7 +19,7 @@ class goalView: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 14, weight: .semibold)
         label.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1.0)
-        label.text = "Step 6/6"
+        label.text = "Step 7/7"
         label.textAlignment = .center
         return label
     }()

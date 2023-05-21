@@ -111,8 +111,8 @@ class login: UIViewController {
         //button actions
         
         buttonSU.addTarget(self, action: #selector(getRegister), for: .touchUpInside)
-        buttonGoogle.addTarget(self, action: #selector(getGender), for: .touchUpInside)
-        buttonApple.addTarget(self, action: #selector(getGender), for: .touchUpInside)
+        buttonGoogle.addTarget(self, action: #selector(getName), for: .touchUpInside)
+        buttonApple.addTarget(self, action: #selector(getName), for: .touchUpInside)
        
         
         //constraints
@@ -155,8 +155,8 @@ class login: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    @objc func getGender(){
-        let vc = genderView()
+    @objc func getName(){
+        let vc = nameView()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

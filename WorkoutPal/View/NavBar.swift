@@ -23,24 +23,30 @@ class NavBar: UIViewController {
         // Add bar button items
         let leftBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: self, action: #selector(homeButtonTapped))
         
-        let centerBarButtonItem = UIBarButtonItem(title: "Previous Workouts", style: .plain, target: self, action: #selector(historyButtonTapped))
+        let centerLeftBarButtonItem = UIBarButtonItem(title: "My Plan", style: .plain, target: self, action: #selector(historyButtonTapped))
         
+        let centerRightBarButtonItem = UIBarButtonItem(title: "Schedule", style: .plain, target: self, action: #selector(scheduleButtonTapped))
         
         let rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(settingsButtonTapped))
         
-        navigationItem.leftBarButtonItems = [leftBarButtonItem,centerBarButtonItem,rightBarButtonItem]
+        navigationItem.leftBarButtonItems = [leftBarButtonItem,centerLeftBarButtonItem, centerRightBarButtonItem,rightBarButtonItem]
     }
     
     // Action when the buttons are tapped
     
     @objc func homeButtonTapped() {
-//        let vc = homeView()
-//        navigationController?.pushViewController(vc, animated: true)
+        let vc = homeView()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func historyButtonTapped() {
-//        let vc = historyView()
-//        navigationController?.pushViewController(vc, animated: true)
+        let vc = historyView()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func scheduleButtonTapped() {
+        let vc = schedulePicker()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func settingsButtonTapped() {

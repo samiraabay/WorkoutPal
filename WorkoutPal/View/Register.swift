@@ -111,8 +111,8 @@ class register: UIViewController {
         //button actions
         
        buttonSI.addTarget(self, action: #selector(getLogin), for: .touchUpInside)
-       buttonGoogle.addTarget(self, action: #selector(getGender), for: .touchUpInside)
-       buttonApple.addTarget(self, action: #selector(getGender), for: .touchUpInside)
+       buttonGoogle.addTarget(self, action: #selector(getName), for: .touchUpInside)
+       buttonApple.addTarget(self, action: #selector(getName), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             labelOne.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -148,8 +148,8 @@ class register: UIViewController {
     
     //button action
     
-    @objc func getGender(){
-        let vc = genderView()
+    @objc func getName(){
+        let vc = nameView()
         navigationController?.pushViewController(vc, animated: true)
     }
 
