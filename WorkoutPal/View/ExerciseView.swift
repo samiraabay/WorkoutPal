@@ -18,7 +18,7 @@ class exerciseView: UIViewController {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 24)
         label.textAlignment = .center
-        label.text = selectedExercise
+        label.text = selectedExerciseName
         return label
     }()
     
@@ -27,7 +27,7 @@ class exerciseView: UIViewController {
         label.font = UIFont.systemFont(ofSize: 16)
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.text = "The video clip above demonstrates the workout activity that you need to do. Follow the demonstration after watching the clip to ensure proper effect is achieved"
+        label.text = selectedExerciseDescription
         return label
     }()
     
@@ -46,7 +46,7 @@ class exerciseView: UIViewController {
         view.backgroundColor = .white
         
         // Set up the video player
-        guard let videoURL = Bundle.main.url(forResource: "normal_pushup", withExtension: "mp4") else {
+        guard let videoURL = Bundle.main.url(forResource: selectedExerciseName, withExtension: "mp4") else {
             fatalError("Video file not found")
         }
         let playerItem = AVPlayerItem(url: videoURL)

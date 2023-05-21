@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		3C019EEE2A16592900F3519D /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C019EED2A16592900F3519D /* SplashScreen.swift */; };
 		3C2069FC2A19194C00BDA319 /* aboutUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2069FB2A19194C00BDA319 /* aboutUserView.swift */; };
-		3C2069FE2A1919C000BDA319 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2069FD2A1919C000BDA319 /* NavBar.swift */; };
 		3C44366F2A19BD33002C2C9A /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C44366E2A19BD33002C2C9A /* NameView.swift */; };
 		3C4436712A19C9A3002C2C9A /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4436702A19C9A3002C2C9A /* homeView.swift */; };
 		3C4436732A19CBA6002C2C9A /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4436722A19CBA6002C2C9A /* ExerciseView.swift */; };
-		3C4436752A19CFD4002C2C9A /* normal_pushup.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C4436742A19CFD4002C2C9A /* normal_pushup.mp4 */; };
 		3C4436772A19D517002C2C9A /* schedulePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4436762A19D517002C2C9A /* schedulePickerView.swift */; };
 		3C4436792A19D5C6002C2C9A /* MyExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4436782A19D5C6002C2C9A /* MyExercisesView.swift */; };
+		3C4436952A1A765A002C2C9A /* Push Ups.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C44368C2A1A7659002C2C9A /* Push Ups.mp4 */; };
+		3C4436962A1A765A002C2C9A /* Cobra Stretch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C44368D2A1A7659002C2C9A /* Cobra Stretch.mp4 */; };
+		3C4436972A1A765A002C2C9A /* squat_to_side_leg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C44368E2A1A7659002C2C9A /* squat_to_side_leg.mp4 */; };
+		3C4436982A1A765A002C2C9A /* Quad Stretch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C44368F2A1A7659002C2C9A /* Quad Stretch.mp4 */; };
+		3C4436992A1A765A002C2C9A /* Crouch Stretch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C4436902A1A765A002C2C9A /* Crouch Stretch.mp4 */; };
+		3C44369A2A1A765A002C2C9A /* Mountain Climber.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C4436912A1A765A002C2C9A /* Mountain Climber.mp4 */; };
+		3C44369B2A1A765A002C2C9A /* Sit Ups.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C4436922A1A765A002C2C9A /* Sit Ups.mp4 */; };
+		3C44369C2A1A765A002C2C9A /* crouched_leg_stretch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C4436932A1A765A002C2C9A /* crouched_leg_stretch.mp4 */; };
+		3C44369D2A1A765A002C2C9A /* leg_pelvic_lift.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C4436942A1A765A002C2C9A /* leg_pelvic_lift.mp4 */; };
+		3C4436A12A1A7F01002C2C9A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4436A02A1A7F01002C2C9A /* TabBar.swift */; };
+		3C4436A32A1A8BD1002C2C9A /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4436A22A1A8BD0002C2C9A /* NavBar.swift */; };
 		3C4746772A173C70005FE475 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4746762A173C70005FE475 /* SummaryView.swift */; };
 		3CC13EE62A165AB0007C8D22 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC13EE52A165AB0007C8D22 /* Register.swift */; };
 		3CC13EE82A165BD4007C8D22 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC13EE72A165BD3007C8D22 /* Login.swift */; };
@@ -33,13 +42,22 @@
 /* Begin PBXFileReference section */
 		3C019EED2A16592900F3519D /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		3C2069FB2A19194C00BDA319 /* aboutUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutUserView.swift; sourceTree = "<group>"; };
-		3C2069FD2A1919C000BDA319 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		3C44366E2A19BD33002C2C9A /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		3C4436702A19C9A3002C2C9A /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
 		3C4436722A19CBA6002C2C9A /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
-		3C4436742A19CFD4002C2C9A /* normal_pushup.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = normal_pushup.mp4; path = ../../../Downloads/normal_pushup.mp4; sourceTree = "<group>"; };
 		3C4436762A19D517002C2C9A /* schedulePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schedulePickerView.swift; sourceTree = "<group>"; };
 		3C4436782A19D5C6002C2C9A /* MyExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExercisesView.swift; sourceTree = "<group>"; };
+		3C44368C2A1A7659002C2C9A /* Push Ups.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Push Ups.mp4"; path = "../../../Downloads/videos/Push Ups.mp4"; sourceTree = "<group>"; };
+		3C44368D2A1A7659002C2C9A /* Cobra Stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cobra Stretch.mp4"; path = "../../../Downloads/videos/Cobra Stretch.mp4"; sourceTree = "<group>"; };
+		3C44368E2A1A7659002C2C9A /* squat_to_side_leg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = squat_to_side_leg.mp4; path = ../../../Downloads/videos/squat_to_side_leg.mp4; sourceTree = "<group>"; };
+		3C44368F2A1A7659002C2C9A /* Quad Stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quad Stretch.mp4"; path = "../../../Downloads/videos/Quad Stretch.mp4"; sourceTree = "<group>"; };
+		3C4436902A1A765A002C2C9A /* Crouch Stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Crouch Stretch.mp4"; path = "../../../Downloads/videos/Crouch Stretch.mp4"; sourceTree = "<group>"; };
+		3C4436912A1A765A002C2C9A /* Mountain Climber.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mountain Climber.mp4"; path = "../../../Downloads/videos/Mountain Climber.mp4"; sourceTree = "<group>"; };
+		3C4436922A1A765A002C2C9A /* Sit Ups.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sit Ups.mp4"; path = "../../../Downloads/videos/Sit Ups.mp4"; sourceTree = "<group>"; };
+		3C4436932A1A765A002C2C9A /* crouched_leg_stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = crouched_leg_stretch.mp4; path = ../../../Downloads/videos/crouched_leg_stretch.mp4; sourceTree = "<group>"; };
+		3C4436942A1A765A002C2C9A /* leg_pelvic_lift.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = leg_pelvic_lift.mp4; path = ../../../Downloads/videos/leg_pelvic_lift.mp4; sourceTree = "<group>"; };
+		3C4436A02A1A7F01002C2C9A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		3C4436A22A1A8BD0002C2C9A /* NavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavBar.swift; path = ../../../../../.Trash/NavBar.swift; sourceTree = "<group>"; };
 		3C4746762A173C70005FE475 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		3CC13EE52A165AB0007C8D22 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		3CC13EE72A165BD3007C8D22 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -81,12 +99,13 @@
 				3CC13EF72A16652F007C8D22 /* LevelView.swift */,
 				3CC13EF92A166585007C8D22 /* GoalView.swift */,
 				3C4746762A173C70005FE475 /* SummaryView.swift */,
+				3C4436A22A1A8BD0002C2C9A /* NavBar.swift */,
 				3C2069FB2A19194C00BDA319 /* aboutUserView.swift */,
-				3C2069FD2A1919C000BDA319 /* NavBar.swift */,
 				3C4436702A19C9A3002C2C9A /* homeView.swift */,
 				3C4436722A19CBA6002C2C9A /* ExerciseView.swift */,
 				3C4436762A19D517002C2C9A /* schedulePickerView.swift */,
 				3C4436782A19D5C6002C2C9A /* MyExercisesView.swift */,
+				3C4436A02A1A7F01002C2C9A /* TabBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,7 +113,15 @@
 		3CFA46C42A129C160059612A = {
 			isa = PBXGroup;
 			children = (
-				3C4436742A19CFD4002C2C9A /* normal_pushup.mp4 */,
+				3C44368D2A1A7659002C2C9A /* Cobra Stretch.mp4 */,
+				3C4436902A1A765A002C2C9A /* Crouch Stretch.mp4 */,
+				3C4436932A1A765A002C2C9A /* crouched_leg_stretch.mp4 */,
+				3C4436942A1A765A002C2C9A /* leg_pelvic_lift.mp4 */,
+				3C4436912A1A765A002C2C9A /* Mountain Climber.mp4 */,
+				3C44368C2A1A7659002C2C9A /* Push Ups.mp4 */,
+				3C44368F2A1A7659002C2C9A /* Quad Stretch.mp4 */,
+				3C4436922A1A765A002C2C9A /* Sit Ups.mp4 */,
+				3C44368E2A1A7659002C2C9A /* squat_to_side_leg.mp4 */,
 				3CFA46CF2A129C160059612A /* WorkoutPal */,
 				3CFA46CE2A129C160059612A /* Products */,
 			);
@@ -178,8 +205,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C44369C2A1A765A002C2C9A /* crouched_leg_stretch.mp4 in Resources */,
 				3CFA46DA2A129C1B0059612A /* Assets.xcassets in Resources */,
-				3C4436752A19CFD4002C2C9A /* normal_pushup.mp4 in Resources */,
+				3C4436952A1A765A002C2C9A /* Push Ups.mp4 in Resources */,
+				3C44369B2A1A765A002C2C9A /* Sit Ups.mp4 in Resources */,
+				3C44369A2A1A765A002C2C9A /* Mountain Climber.mp4 in Resources */,
+				3C4436982A1A765A002C2C9A /* Quad Stretch.mp4 in Resources */,
+				3C44369D2A1A765A002C2C9A /* leg_pelvic_lift.mp4 in Resources */,
+				3C4436962A1A765A002C2C9A /* Cobra Stretch.mp4 in Resources */,
+				3C4436992A1A765A002C2C9A /* Crouch Stretch.mp4 in Resources */,
+				3C4436972A1A765A002C2C9A /* squat_to_side_leg.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +230,7 @@
 				3C44366F2A19BD33002C2C9A /* NameView.swift in Sources */,
 				3C4436772A19D517002C2C9A /* schedulePickerView.swift in Sources */,
 				3C4436732A19CBA6002C2C9A /* ExerciseView.swift in Sources */,
+				3C4436A32A1A8BD1002C2C9A /* NavBar.swift in Sources */,
 				3C2069FC2A19194C00BDA319 /* aboutUserView.swift in Sources */,
 				3CFA46D12A129C160059612A /* AppDelegate.swift in Sources */,
 				3CC13EFA2A166585007C8D22 /* GoalView.swift in Sources */,
@@ -204,11 +240,11 @@
 				3CC13EE82A165BD4007C8D22 /* Login.swift in Sources */,
 				3CC13EF62A165EFF007C8D22 /* HeightView.swift in Sources */,
 				3CFA46D32A129C160059612A /* SceneDelegate.swift in Sources */,
-				3C2069FE2A1919C000BDA319 /* NavBar.swift in Sources */,
 				3C4436712A19C9A3002C2C9A /* homeView.swift in Sources */,
 				3CC13EE62A165AB0007C8D22 /* Register.swift in Sources */,
 				3CC13EF22A165EE3007C8D22 /* AgeView.swift in Sources */,
 				3C4436792A19D5C6002C2C9A /* MyExercisesView.swift in Sources */,
+				3C4436A12A1A7F01002C2C9A /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
